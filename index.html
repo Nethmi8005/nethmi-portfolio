@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nethmi Wanigasekara - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<div>
+
+  <!-- ══════════════════ NAVIGATION ══════════════════ -->
+  <nav>
+    <a href="javascript:void(0)" class="nav-logo" onclick="showPage('home')">NW</a>
+    <ul class="nav-links">
+      <li><a href="javascript:void(0)" onclick="showPage('home')" data-page="home" class="active">Home</a></li>
+      <li><a href="javascript:void(0)" onclick="showPage('about')" data-page="about">About</a></li>
+      <li><a href="javascript:void(0)" onclick="showPage('projects')" data-page="projects">Projects</a></li>
+      <li><a href="javascript:void(0)" onclick="showPage('achievements')" data-page="achievements">Achievements</a></li>
+      <li><a href="javascript:void(0)" onclick="showPage('contact')" data-page="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════ PAGE 1: HOME ══════════════════ -->
+
+  <div id="page-home" class="page active">
+
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-eyebrow">BSc in Applied Sciences - Computer Science &amp; Mathematics Undergraduate</div>
+        <h1>Nethmi<br><em>Wanigasekara</em></h1>
+        <p class="hero-subtitle">Software Development · AI/ML · Data & Analytics · Operations Research</p>
+        <p class="hero-bio">
+          Final-year B.Sc. Applied Sciences undergraduate at Rajarata University of Sri Lanka, Majoring in Computer Science and Mathematics. I have a multidisciplinary academic background covering software development, artificial intelligence, databases, statistics, operations research and optimisation, with hands-on experience through academic projects and research.
+        </p>
+        <div class="hero-actions">
+          <a href="javascript:void(0)" class="btn btn-primary" onclick="showPage('projects')">View Projects →</a>
+          <a href="javascript:void(0)" class="btn btn-outline" onclick="showPage('contact')">Get in Touch</a>
+        </div>
+
+        <div class="social-links">
+          <!-- ★ Replace href with your actual GitHub URL -->
+          <a href="https://github.com/Nethmi8005" target="_blank" class="social-link" title="GitHub Profile">
+            ⌥ GitHub
+          </a>
+          <a href="mailto:nethmikaushika8005@gmail.com" class="social-link">
+            ✉ Email
+          </a>
+          <a href="tel:+94762945946" class="social-link">
+            ☏ Call
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <!--
+          ★ TO ADD YOUR PHOTO:
+          1. Place your photo file in the same folder as index.html
+          2. Replace the div below with:
+             <img src="YOUR_PHOTO.jpg" alt="Nethmi Wanigasekara" class="photo-real" />
+        -->
+          <img src="photo.jpg" alt="Nethmi Wanigasekara" class="photo-real" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Academic Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Achievements</span>
+        </div>
+      </div>
+
+      <!-- Internal Navigation Map (Image Map alternative with clickable regions) -->
+      <div class="section anchor-section" id="explore">
+        <span class="section-label">- Explore</span>
+        <h2 class="section-title">Navigate My Portfolio</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.75rem;font-size:0.85rem;">
+          Click any section below to jump directly to that part of my portfolio.
+        </p>
+
+        <!-- IMAGE MAP — interactive skill map -->
+        <div class="imgmap-placeholder">
+          <div class="map-region" onclick="showPage('about')" title="Go to About page">
+            <div class="r-icon">🎓</div>
+            <h4>About Me</h4>
+            <p>Education, Skills &amp; Background</p>
+            <div class="map-tooltip">Click → About Page</div>
+          </div>
+          <div class="map-region" onclick="showPage('projects')" title="Go to Projects page">
+            <div class="r-icon">💻</div>
+            <h4>Projects</h4>
+            <p>Academic &amp; Research Work</p>
+            <div class="map-tooltip">Click → Projects Page</div>
+          </div>
+          <div class="map-region" onclick="showPage('achievements')" title="Go to Achievements page">
+            <div class="r-icon">🏆</div>
+            <h4>Achievements</h4>
+            <p>Certificates &amp; Awards</p>
+            <div class="map-tooltip">Click → Achievements Page</div>
+          </div>
+        </div>
+        <!-- Standard HTML image map for a real image (usemap attribute example):
+      <img src="skills-map.png" usemap="#skillmap" alt="Portfolio Map" style="width:100%;">
+      <map name="skillmap">
+        <area shape="rect" coords="0,0,366,320" href="javascript:void(0)" onclick="showPage('about')" alt="About">
+        <area shape="rect" coords="367,0,733,320" href="javascript:void(0)" onclick="showPage('projects')" alt="Projects">
+        <area shape="rect" coords="734,0,1100,320" href="javascript:void(0)" onclick="showPage('achievements')" alt="Achievements">
+      </map>
+      -->
+      </div>
+
+    </div>
+    <footer>
+      <p>© 2026 Nethmi Wanigasekara · Rajarata University of Sri Lanka ·
+        <a href="mailto:nethmikaushika8005@gmail.com">nethmikaushika8005@gmail.com</a>
+      </p>
+    </footer>
+  </div>
+</div>
+
+
+<!-- ══════════════════ PAGE 2: ABOUT ══════════════════ -->
+<div id="page-about" class="page">
+
+  <div class="container">
+
+    <div class="section anchor-section" id="about-top">
+      <span class="section-label">- Who I am</span>
+      <h1 class="page-title">About <span>Me</span></h1>
+      <p style="color:var(--text-muted);max-width:600px;font-size:0.9rem;line-height:1.8;">
+       I am a final-year B.Sc. Applied Sciences undergraduate at Rajarata University of Sri Lanka, Majoring in Computer Science and Mathematics.
+My academic background combines programming, software engineering, database systems, artificial intelligence, statistics, mathematical modelling, operations research and optimization.<br>
+Through university projects, I have gained practical experience developing software applications, relational database systems, machine-learning models and optimization-based solutions. My projects include an AI-based dynamic parking system, a garbage - classification model, a railway reservation system, and a supplier and inventory management system.<br>
+I have also participated in academic research and presentation - based projects covering environmental and sustainability topics.<br>
+I am interested in opportunities where I can apply my technical, mathematical and analytical knowledge to real - world problems while developing professional experience in software engineering, AI/ML, data analytics, industrial engineering or operations.
+      </p>
+      <!-- Internal link anchors -->
+      <div style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.5rem;">
+        <a href="javascript:void(0)" onclick="scrollToId('education')" class="btn btn-outline">↓ Education</a>
+        <a href="javascript:void(0)" onclick="scrollToId('Technical skills-section')" class="btn btn-outline">↓ Technical Skills</a>
+        <a href="javascript:void(0)" onclick="scrollToId('skills-section')" class="btn btn-outline">↓ What I Bring</a>
+        <a href="javascript:void(0)" onclick="scrollToId('volunteer')" class="btn btn-outline">↓ Volunteer Work</a>
+        <a href="javascript:void(0)" onclick="scrollToId('linkedin-embed')" class="btn btn-outline">↓ LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Education Timeline -->
+    <div class="section anchor-section" id="education">
+      <span class="section-label">- Background</span>
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2022 - 2026</div>
+          <div class="timeline-title">B.Sc. in Applied Sciences</div>
+          <div class="timeline-sub">Rajarata University of Sri Lanka</div>
+          <div class="timeline-desc">
+            <p>Computer Science - Programming in C · Principles of Program Design · Object-Oriented Programming · Database Management Systems · Digital Logic Design · Web Design · System Analysis & Design · Software Engineering · Data Structures & Algorithms · Artificial Intelligence · Operating Systems</p>
+            <p>Mathematics & Analytical Studies - Introduction to Statistics · Introduction to Probability · Mathematical Statistics I & II · Numerical Analysis I & II · Linear Algebra · Differential Equations · Financial Mathematics · Operations Research I & II · Network Optimization </p>
+            <p>Industrial & Business Studies - Operations & Total Quality Management · Marketing · Human Resource Management · Philosophy
+              of Science · Career Development · English for Professional Purposes </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2020</div>
+          <div class="timeline-title">G.C.E. Advanced Level</div>
+          <div class="timeline-sub">KG/St.Joseph's Balika Maha Vidyalaya</div>
+          <div class="timeline-desc">
+            Physics - S &nbsp;|&nbsp; Combined Mathematics - C &nbsp;|&nbsp; ICT - S &nbsp;|&nbsp;
+            General English - C &nbsp;|&nbsp; Z-Score: +0.2793
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Table -->
+    <div class="section anchor-section" id="Technical skills-section">
+      <span class="section-label">- Capabilities</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Skill</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Programming</td>
+            <td>Python · C · C++ · SQL · JavaScript · PHP</td>
+          </tr>
+          <tr>
+            <td>AI & Machine Learning</td>
+            <td>CNN · YOLOv5 · Image Classification · Object Detection</td>
+          </tr>
+          <tr>
+            <td>Software & Web Development</td>
+            <td>Flask · React Native · REST APIs · HTML · CSS · JavaScript</td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td>MySQL · SQLite · Relational Database Design</td>
+          </tr>
+          <tr>
+            <td>Data & Scientific Tools</td>
+            <td>MATLAB · Microsoft Excel</td>
+          </tr>
+          <tr>
+            <td>Productivity & Design</td>
+            <td>Microsoft Word · Microsoft PowerPoint · Canva · Google Workspace · Figma</td>
+          </tr>
+          <tr>
+            <td>Development Tools</td>
+            <td>Git · GitHub · Expo Go </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="section anchor-section" id="skills-section">
+      <span class="section-label">- Capabilities</span>
+      <h2 class="section-title" style="margin-top:3rem;">What I Bring</h2>
+      <div class="grid-3" style="margin-top:0;">
+        <div class="card">
+          <h3>Analytical Problem Solving</h3>
+          <p>Combining mathematical and computational thinking to approach complex problems.</p>
+          </div>
+          <div class="card">
+          <h3>Technical Foundation</h3>
+          <p>Experience with Python, C/C++, SQL, databases, web development and machine learning through academic projects.</p>
+          </div>
+          <div class="card">
+          <h3>AI & Technology</h3>
+          <p>Practical academic experience with computer vision, image classification and object detection.</p>
+          </div>
+          <div class="card">
+          <h3>Operations & Optimization</h3>
+          <p>Academic foundation in Operations Research, Network Optimization and Total Quality Management.</p>
+          </div>
+          <div class="card">
+          <h3>Research</h3>
+          <p>Experience investigating academic topics, gathering information from existing sources and presenting findings.</p>
+          </div>
+          <div class="card">
+          <h3>Leadership &amp; Teamwork</h3>
+          <p>Experience working collaboratively on software, database and machine-learning projects and volunteering coordination roles.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteer -->
+    <div class="section anchor-section" id="volunteer">
+      <span class="section-label">- Giving Back</span>
+      <h2 class="section-title">Volunteer Work</h2>
+      <div class="card" style="max-width:600px;">
+        <span class="card-tag">2024 - 2026 · Rajarata University of Sri Lanka</span>
+        <h3>ZeroPlastic Club - Media Team Member</h3>
+        <p>
+          Received Volunteer Appreciation Certificate for creative media contributions to 2025 formal projects.
+          Promoted environmental sustainability and plastic waste reduction through media campaigns.
+        </p>
+      </div>
+    </div>
+
+    <div class="section anchor-section" id="linkedin-embed">
+      <span class="section-label">- Connect</span>
+      <h2 class="section-title">Professional Profile</h2>
+
+      <div
+        style="background:var(--card);border:1px solid var(--border);padding:2rem;max-width:560px;display:flex;flex-direction:column;gap:1.5rem;">
+
+        <!-- Top row -->
+        <div style="display:flex;align-items:center;gap:1.25rem;">
+          <img src="https://github.com/Nethmi8005.png" alt="Nethmi Wanigasekara"
+            style="width:72px;height:72px;border-radius:50%;border:2px solid var(--accent);object-fit:cover;">
+          <div>
+            <div style="font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;">Nethmi Wanigasekara</div>
+            <div style="color:var(--accent);font-size:0.78rem;margin-top:0.2rem;">BSc Applied Sciences - Computer
+              Science & Mathematics</div>
+            <div style="color:var(--text-muted);font-size:0.75rem;margin-top:0.2rem;">Rajarata University of Sri Lanka ·
+              Kegalle, Sri Lanka</div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="height:1px;background:var(--border);"></div>
+
+        <!-- Button -->
+        <a href="https://www.linkedin.com/in/nethmi-wanigasekara-3b1865393" target="_blank"
+          style="display:inline-flex;align-items:center;gap:0.75rem;padding:0.85rem 1.75rem;background:#0a66c2;color:#fff;text-decoration:none;font-family:'DM Mono',monospace;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;align-self:start;transition:background 0.2s;"
+          onmouseover="this.style.background='#004182'" onmouseout="this.style.background='#0a66c2'">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 Nethmi Wanigasekara · Rajarata University of Sri Lanka ·
+      <a href="mailto:nethmikaushika8005@gmail.com">nethmikaushika8005@gmail.com</a>
+    </p>
+  </footer>
+</div>
+
+
+<!-- ══════════════════ PAGE 3: PROJECTS ══════════════════ -->
+<div id="page-projects" class="page">
+
+  <div class="container">
+    <div class="section anchor-section" id="projects-top">
+      <span class="section-label">- Work</span>
+      <h1 class="page-title">Academic <span>Projects</span></h1>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;">
+        <a href="javascript:void(0)" onclick="scrollToId('research')" class="btn btn-outline">↓ Research</a>
+        <a href="javascript:void(0)" onclick="scrollToId('group')" class="btn btn-outline">↓ Group Projects</a>
+        <a href="javascript:void(0)" onclick="scrollToId('individual')" class="btn btn-outline">↓ Individual
+          Projects</a>
+        <a href="javascript:void(0)" onclick="scrollToId('github-section')" class="btn btn-outline">↓ GitHub</a>
+      </div>
+    </div>
+
+    <!-- Research Projects -->
+    <div class="section anchor-section" id="research">
+      <span class="section-label">- Research</span>
+      <h2 class="section-title">Research Projects</h2>
+      <div class="grid-2">
+        <div class="project-card">
+          <div class="proj-type">External Research · Individual (Reading)</div>
+          <h3>Discussing about the topic with my Supervisor </h3>
+          <p>Under the supervision of Dr.E.M.U.S.B.Ekanayake - Rajarata University of Sri Lanka - Based on Computer Science and Mathematics</p>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Research · Machine Learning </div>
+          <h3>SmartPark - Configurable Dynamic Parking Area</h3>
+          <p>Designed and developed an end-to-end, software-driven smart parking platform created to eliminate the
+            massive space wastage caused by traditional static parking layouts. Instead of using fixed, pre-marked
+            individual slots, the system treats the parking lot as a fluid grid to dynamically position and park any
+            vehicle based on its exact dimensions. Fine-tuned a YOLOv5 (PyTorch) object detection model on the PKLot
+            dataset to track real-time grid availability via an overhead web camera feed. Developed a custom Python
+            algorithm that dynamically resizes space configurations on the physical hardware grid layout to maximize
+            space efficiency. Prototyped the entire UI/UX in Figma and engineered the mobile application using React
+            Native (Expo Go), integrating RESTful APIs, a MySQL database, and internal path guidance to route drivers
+            directly from the entrance to their dynamically generated grid position.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Space Optimization Algorithm</span>
+            <span class="proj-tag">RESTful APIs</span>
+            <span class="proj-tag">React Native (Expo Go)</span>
+            <span class="proj-tag">YOLOv5 (PyTorch)</span>
+            <span class="proj-tag">MySQL Database</span>
+            <span class="proj-tag">Path Guidance</span>
+            <span class="proj-tag">Figma</span>
+            <span class="proj-tag">Hardware Grid System</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Web Camera</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="#"
+              onclick="alert('Upload your SmartPark project files to GitHub and replace this link with your repository URL.')"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Research · Data Analytics </div>
+          <h3>Analyzing the Relationship Between CO₂ &amp; Emissions and Climate Change Indicators (2000 - 2023)</h3>
+          <p>Executed a quantitative longitudinal research study using SPSS to analyze 24 years of global environmental
+            data (2000 - 2023) across five countries: the USA, China, Germany, India, and Indonesia. Built multiple linear
+            regression and ANOVA models to evaluate how carbon emissions directly drive average temperature hikes and
+            sea level rise, while measuring the protective, risk-reducing benefits of forest conservation and renewable
+            energy adoption.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">SPSS</span>
+            <span class="proj-tag">Quantitative Modeling</span>
+            <span class="proj-tag">Multiple Linear Regression</span>
+            <span class="proj-tag">Binary Logistic Regression</span>
+            <span class="proj-tag">ANOVA</span>
+            <span class="proj-tag">Trend Analysis</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="#"
+              onclick="alert('Upload your CO₂ research files to GitHub and replace this link with your repository URL.')"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group Projects -->
+    <div class="section anchor-section" id="group">
+      <span class="section-label">- Collaboration</span>
+      <h2 class="section-title">Group Projects</h2>
+      <div class="grid-2">
+        <div class="project-card">
+          <div class="proj-type">Group Project · Web · Database Engineering </div>
+          <h3>Railway Reservation System</h3>
+          <p>
+            Developed a full-stack web application using Flask and SQLite to manage
+            ticket bookings, train schedules, and station networks. Architected a
+            relational database schema enforcing unique constraints to prevent
+            double-bookings, and engineered role-based dashboards to isolate workflows
+            for admins, schedulers, ticket counters, and passengers.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python (Flask)</span>
+            <span class="proj-tag">SQLite</span>
+            <span class="proj-tag">Relational Database Design</span>
+            <span class="proj-tag">Role-Based Access Control</span>
+            <span class="proj-tag">CRUD Operations</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="#"
+              onclick="alert('Upload your Railway Reservation System files to GitHub and replace this link with your repository URL.')"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Group Project · ML · Python </div>
+          <h3>Garbage Classification Model</h3>
+          <p>Developed a machine learning model for automatic waste classification to support recycling and
+            environmental sustainability. Trained on image datasets.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">Machine Learning</span>
+            <span class="proj-tag">Image Classification</span>
+            <span class="proj-tag">CNN</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Group Project · Backend · Database Engineering </div>
+          <h3>Integrated Supplier & Inventory Management System</h3>
+          <p>
+            Designed and structured a centralized relational database system to
+            optimize supply chain pipelines, track stock quantities in real time,
+            and streamline procurement workflows. Architected a normalized schema
+            across six core transactional tables - including Suppliers, Items,
+            Purchase Orders, Returns, and Invoices - enforcing strict primary/foreign
+            key relationships to prevent data anomalies and ensure financial audit tracking.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Database Schema Design</span>
+            <span class="proj-tag">Relational Modeling</span>
+            <span class="proj-tag">Purchase & Billing Workflows</span>
+            <span class="proj-tag">Security Access Control</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="#"
+              onclick="alert('Upload your Supplier & Inventory System files to GitHub and replace this link with your repository URL.')"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Individual Projects -->
+    <div class="section anchor-section" id="individual">
+      <span class="section-label">- Solo Work</span>
+      <h2 class="section-title">Individual Projects</h2>
+      <div class="grid-2">
+        <div class="project-card">
+          <div class="proj-type">Individual · C++ · Desktop App </div>
+          <h3>Text Editor &amp; Personal Organizer</h3>
+          <p>
+            Built a GUI desktop application using C++ with text editing and personal
+            organisation functionalities. Features include file management, formatting,
+            and task tracking - applying core Object-Oriented Programming principles
+            throughout the design and implementation.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">C++</span>
+            <span class="proj-tag">GUI</span>
+            <span class="proj-tag">OOP</span>
+            <span class="proj-tag">Desktop App</span>
+            <span class="proj-tag">File Management</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="#"
+              onclick="alert('Upload your C++ project files to GitHub and replace this link with your repository URL.')"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Individual · HTML · CSS </div>
+          <h3>Sri Lankan Music Industry Website - LankaBeat</h3>
+          <p>
+            Developed a multi-page static website called <strong>LankaBeat</strong> covering
+            the Sri Lankan music industry. Features include latest news, rising artist profiles,
+            music releases with audio players, concert listings, a feedback form, and an About
+            page - all styled with custom CSS and a consistent layout across 6 pages.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">Web Design</span>
+            <span class="proj-tag">Multi-page</span>
+            <span class="proj-tag">Audio Player</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005/Sri-Lankan-Music-Industry-News-and-Updates." target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="https://Nethmi8005.github.io/Sri-Lankan-Music-Industry-News-and-Updates." target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ Live Demo
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="proj-type">Individual - Marketing </div>
+          <h3>Milk Product Marketing Plan & Digital Campaign Platform</h3>
+          <p>
+            Developed a comprehensive marketing strategy encompassing market analysis,
+            targeting, brand positioning, and promotional planning for a premium dairy
+            product, paired with a custom front-end digital launch landing page.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">Market Analysis</span>
+            <span class="proj-tag">Branding</span>
+            <span class="proj-tag">Strategy</span>
+            <span class="proj-tag">Digital Platform</span>
+            <span class="proj-tag">Web Design</span>
+          </div>
+          <div style="margin-top:1.25rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/Nethmi8005" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;border:1px solid var(--border);color:var(--text-muted);text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:all 0.2s;"
+              onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'"
+              onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-muted)'">
+              ⌥ View on GitHub
+            </a>
+            <a href="https://nethmi8005.github.io/Milk-Product-Marketing-Plan/" target="_blank"
+              style="display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1rem;background:var(--accent);color:#0a0a0f;text-decoration:none;font-size:0.75rem;letter-spacing:0.08em;transition:background 0.2s;"
+              onmouseover="this.style.background='#e0c080'" onmouseout="this.style.background='var(--accent)'">
+              ↗ View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Banner -->
+      <div class="section anchor-section" id="github-section">
+        <div class="github-banner">
+          <div>
+            <h3>View My Code on GitHub</h3>
+            <p>Browse source code, commit history, and repositories for my academic and personal projects.</p>
+          </div>
+          <a href="https://github.com/Nethmi8005" target="_blank" class="github-link">
+            ⌥ &nbsp; github.com/Nethmi8005
+          </a>
+        </div>
+
+        <!-- GitHub Contributions iframe -->
+        <div class="iframe-container" style="margin-top:1.5rem;">
+          <div class="iframe-label">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            &nbsp; GitHub Contribution Graph
+          </div>
+          <div style="padding:1.5rem;background:var(--bg3);">
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+
+              <div>
+                <div style="padding:1.5rem;background:var(--bg3);">
+                  <div id="contrib-chart" style="overflow-x:auto;"></div>
+                  <div id="contrib-legend"
+                    style="display:flex;align-items:center;gap:0.75rem;margin-top:1rem;font-size:0.68rem;color:var(--text-muted);">
+                  </div>
+                </div>
+
+                <script>
+                  (async function () {
+                    const username = 'Nethmi8005';
+                    const years = [2022, 2023, 2024, 2025, 2026];
+                    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    const allData = {};
+
+                    for (const year of years) {
+                      try {
+                        const from = `${year}-01-01T00:00:00Z`;
+                        const to = `${year}-12-31T23:59:59Z`;
+                        const res = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=${year}`);
+                        const json = await res.json();
+                        allData[year] = json.contributions || [];
+                      } catch (e) {
+                        allData[year] = [];
+                      }
+                    }
+
+                    // Build a map: "YYYY-MM-DD" -> count
+                    const countMap = {};
+                    for (const year of years) {
+                      for (const day of allData[year]) {
+                        countMap[day.date] = day.count;
+                      }
+                    }
+
+                    // Find max for color scaling
+                    const maxCount = Math.max(1, ...Object.values(countMap));
+
+                    function getColor(count) {
+                      if (!count || count === 0) return '#1c1c28';
+                      const intensity = count / maxCount;
+                      if (intensity < 0.25) return '#3d3220';
+                      if (intensity < 0.5) return '#7a6030';
+                      if (intensity < 0.75) return '#b08040';
+                      return '#c8a96e';
+                    }
+
+                    // Build grid: rows = days of week (0=Sun..6=Sat), cols = each week from Jan 2022 to Dec 2026
+                    const startDate = new Date('2022-01-02'); // first Sunday >= Jan 1 2022
+                    const endDate = new Date('2026-12-31');
+
+                    // Collect all weeks
+                    const weeks = [];
+                    let current = new Date(startDate);
+                    while (current <= endDate) {
+                      const week = [];
+                      for (let d = 0; d < 7; d++) {
+                        const dd = new Date(current);
+                        dd.setDate(dd.getDate() + d);
+                        const dateStr = dd.toISOString().split('T')[0];
+                        week.push({ date: dateStr, count: countMap[dateStr] || 0, future: dd > new Date() });
+                      }
+                      weeks.push(week);
+                      current.setDate(current.getDate() + 7);
+                    }
+
+                    // Month label positions
+                    const monthLabels = [];
+                    let lastMonth = -1;
+                    weeks.forEach((week, i) => {
+                      const d = new Date(week[0].date);
+                      if (d.getMonth() !== lastMonth) {
+                        monthLabels.push({ i, label: months[d.getMonth()] + (d.getMonth() === 0 ? ' ' + d.getFullYear() : '') });
+                        lastMonth = d.getMonth();
+                      }
+                    });
+
+                    // Render SVG
+                    const cellSize = 11;
+                    const cellGap = 2;
+                    const step = cellSize + cellGap;
+                    const topPad = 24;
+                    const leftPad = 0;
+                    const svgW = weeks.length * step + leftPad;
+                    const svgH = 7 * step + topPad + 4;
+
+                    let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${svgW}" height="${svgH}" style="display:block;">`;
+
+                    // Month labels
+                    monthLabels.forEach(({ i, label }) => {
+                      svg += `<text x="${leftPad + i * step}" y="14" font-size="9" fill="#8a8690" font-family="DM Mono,monospace">${label}</text>`;
+                    });
+
+                    // Cells
+                    weeks.forEach((week, wi) => {
+                      week.forEach((day, di) => {
+                        const x = leftPad + wi * step;
+                        const y = topPad + di * step;
+                        const color = day.future ? 'transparent' : getColor(day.count);
+                        const title = `${day.date}: ${day.count} contributions`;
+                        svg += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" rx="2" fill="${color}"><title>${title}</title></rect>`;
+                      });
+                    });
+
+                    svg += `</svg>`;
+
+                    document.getElementById('contrib-chart').innerHTML = svg;
+
+                    // Legend
+                    document.getElementById('contrib-legend').innerHTML = `
+    <span>Less</span>
+    <rect/>
+    ${['#1c1c28', '#3d3220', '#7a6030', '#b08040', '#c8a96e'].map(c =>
+                      `<span style="display:inline-block;width:11px;height:11px;background:${c};border-radius:2px;border:1px solid #2a2a3a;"></span>`
+                    ).join('')}
+    <span>More</span>
+    <span style="margin-left:1rem;">Hover a cell to see the date &amp; count</span>
+  `;
+                  })();
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 Nethmi Wanigasekara · Rajarata University of Sri Lanka ·
+      <a href="mailto:nethmikaushika8005@gmail.com">nethmikaushika8005@gmail.com</a>
+    </p>
+  </footer>
+</div>
+
+
+<!-- ══════════════════ PAGE 4: ACHIEVEMENTS ══════════════════ -->
+<div id="page-achievements" class="page">
+
+  <div class="container">
+    <div class="section anchor-section" id="ach-top">
+      <span class="section-label">- Recognition</span>
+      <h1 class="page-title">Achieve<span>ments</span></h1>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;">
+        <a href="javascript:void(0)" onclick="scrollToId('academic-ach')" class="btn btn-outline">↓ Academic</a>
+        <a href="javascript:void(0)" onclick="scrollToId('sports')" class="btn btn-outline">↓ Sports</a>
+        <a href="javascript:void(0)" onclick="scrollToId('arts')" class="btn btn-outline">↓ Arts &amp; Music</a>
+        <a href="javascript:void(0)" onclick="scrollToId('certificates')" class="btn btn-outline">↓ Certificates</a>
+      </div>
+    </div>
+
+    <!-- Academic / Certificates -->
+    <div class="section anchor-section" id="academic-ach">
+      <span class="section-label">- Education</span>
+      <h2 class="section-title">Academic &amp; Another Qualifications</h2>
+      <table class="ach-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Qualification</th>
+            <th>Issuing Body</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="scrollToId('cert-python')" style="cursor:pointer;">
+            <td>2026</td>
+            <td>Python for Beginners - Successfully completed</td>
+            <td>Open Learning Platform - Online Course - University of Moratuwa</td>
+          </tr>
+          <tr onclick="scrollToId('cert-confirm')" style="cursor:pointer;">
+            <td>2026</td>
+            <td>University Confirmation Letter - B.Sc.in Applied Sciences</td>
+            <td>Rajarata University of Sri Lanka</td>
+          </tr>
+          <tr onclick="scrollToId('cert-al')" style="cursor:pointer;">
+            <td>2020</td>
+            <td>G.C.E.Advanced Level Certificate</td>
+            <td>KG/St.Joseph's Balika Maha Vidyalaya</td>
+          </tr>
+          <tr onclick="scrollToId('cert-ol')" style="cursor:pointer;">
+            <td>2013</td>
+            <td>G.C.E.Ordinary Level Certificate</td>
+            <td>KG/St.Joseph's Balika Maha Vidyalaya</td>
+          </tr>
+          <tr onclick="scrollToId('cert-volunteer')" style="cursor:pointer;">
+            <td>2025</td>
+            <td>Volunteer Appreciation Certificate</td>
+            <td>ZeroPlastic Club - Media Team, Rajarata University of Sri Lanka</td>
+          </tr>
+          <tr onclick="scrollToId('cert-sustain')" style="cursor:pointer;">
+            <td>2025</td>
+            <td>Volunteer Appreciation Certificate</td>
+            <td>ZeroPlastic Club - Sustain Session 3.3 webinar , Rajarata University of Sri Lanka</td>
+          </tr>
+          <tr onclick="scrollToId('cert-western-music')" style="cursor:pointer;">
+            <td>2024</td>
+            <td>Western Music SDP Certificate</td>
+            <td>Ministry of Buddhasasana &amp; Rajarata University of Sri Lanka</td>
+          </tr>
+          <tr onclick="scrollToId('cert-bhathkande')" style="cursor:pointer;">
+            <td>2018</td>
+            <td>Bhathkande Vocal Prathama - 1st Division</td>
+            <td>Erandathie Lalitha Kalayathanaya, Horana </td>
+          </tr>
+          <tr onclick="scrollToId('cert-daham-pasal-final')" style="cursor:pointer;">
+            <td>2018</td>
+            <td>Daham Pasal Final Certificate</td>
+            <td>Department of Examinations - Sri Lanka</td>
+          </tr>
+          <tr onclick="scrollToId('cert-class')" style="cursor:pointer;">
+            <td>2012</td>
+            <td>Class Proficiency Award</td>
+            <td>KG/St.Joseph's Balika Maha Vidyalaya</td>
+          </tr>
+          <tr onclick="scrollToId('cert-music')" style="cursor:pointer;">
+            <td>2008</td>
+            <td>Music Theory - Elementary Honours</td>
+            <td>Institute of Western Music &amp; Speech</td>
+          </tr>
+          <tr onclick="scrollToId('cert-music-grade-two')" style="cursor:pointer;">
+            <td>2010</td>
+            <td>Music Theory - Grade Two Pass</td>
+            <td>Institute of Western Music &amp; Speech</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sports Achievements Table -->
+    <div class="section anchor-section" id="sports">
+      <span class="section-label">- Athletics</span>
+      <h2 class="section-title">Sports Achievements</h2>
+      <table class="ach-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Event</th>
+            <th>Competition</th>
+            <th>Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="scrollToId('sport-cricket')" style="cursor:pointer;">
+            <td>2021</td>
+            <td>Cricket</td>
+            <td>46th National Sports Festival, Kegalle Divisional Secretariat</td>
+            <td><span class="badge badge-gold">🥇 1st Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('sport-elle')" style="cursor:pointer;">
+            <td>2024</td>
+            <td>Elle</td>
+            <td>Inter Faculty Championship, Rajarata University of Sri Lanka</td>
+            <td><span class="badge badge-bronze">🥉 2nd Runner-Up</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Arts & Music Achievements -->
+    <div class="section anchor-section" id="arts">
+      <span class="section-label">- Creative</span>
+      <h2 class="section-title">Arts &amp; Music Achievements</h2>
+      <table class="ach-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Event</th>
+            <th>Awarding Body</th>
+            <th>Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr onclick="scrollToId('art-singing-2015')" style="cursor:pointer;">
+            <td>2015</td>
+            <td>Singing Competition</td>
+            <td>National Reading Month Library Competition, KG/St.Joseph's Balika Maha Vidyalaya</td>
+            <td><span class="badge badge-silver">🥈 2nd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-singing-2014')" style="cursor:pointer;">
+            <td>2014</td>
+            <td>Singing Competition</td>
+            <td>Sabaragamuwa Province</td>
+            <td><span class="badge badge-silver">2nd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-singing-2014-rajya')" style="cursor:pointer;">
+            <td>2014</td>
+            <td>Singing - Rajya Sahithya Kala Ulela</td>
+            <td>Galigamuwa Division</td>
+            <td><span class="badge badge-gold">1st Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-poem-2012')" style="cursor:pointer;">
+            <td>2012</td>
+            <td>Poem Writing - Rajya Sahithya Kala Ulela</td>
+            <td>Kegalle District</td>
+            <td><span class="badge badge-bronze">3rd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-poem-2012-galigamuwa')" style="cursor:pointer;">
+            <td>2012</td>
+            <td>Poem Writing - Rajya Sahithya Kala Ulela</td>
+            <td>Galigamuwa Division</td>
+            <td><span class="badge badge-bronze">1st Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-essay-2011')" style="cursor:pointer;">
+            <td>2011</td>
+            <td>Essay Writing - Rajya Sahithya Kala Ulela</td>
+            <td>Kegalle District</td>
+            <td><span class="badge badge-silver">2nd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-essay-2011-galigamuwa')" style="cursor:pointer;">
+            <td>2011</td>
+            <td>Essay Writing - Rajya Sahithya Kala Ulela</td>
+            <td>Galigamuwa Division</td>
+            <td><span class="badge badge-silver">1st Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-essay-2012')" style="cursor:pointer;">
+            <td>2012</td>
+            <td>Essay Writing - Rajya Sahithya Kala Ulela</td>
+            <td>Galigamuwa Division</td>
+            <td><span class="badge badge-silver">2nd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-singing')" style="cursor:pointer;">
+            <td>2006</td>
+            <td>Padya Gayana - Sri Sambuddha Jayanthiya</td>
+            <td>Divisional Secretariat - Galigamuwa</td>
+            <td><span class="badge badge-bronze">3rd Place</span></td>
+          </tr>
+          <tr onclick="scrollToId('art-2006')" style="cursor:pointer;">
+            <td>2006</td>
+            <td>Bhakthi Geetha - Sri Sambuddha Jayanthiya</td>
+            <td>Divisional Secretariat - Galigamuwa</td>
+            <td><span class="badge badge-silver">2nd Place</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Certificate Upload Zone -->
+    <div class="section anchor-section" id="certificates">
+      <span class="section-label">- Gallery</span>
+      <h2 class="section-title">My Certificates</h2>
+      <div class="cert-grid">
+        <div class="cert-card" id="cert-python">
+          <h4>Python for Beginners</h4>
+          <p>Open Learning Platform - Online Course - University of Moratuwa</p>
+          <img src="certificates/Python for Beginners.jpg" alt="Python for Beginners"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-confirm">
+          <h4>University Confirmation Letter</h4>
+          <p>B.Sc.in Applied Sciences - Rajarata University of Sri Lanka</p>
+          <img src="certificates/University Confirmation Letter.jpg" alt="University Confirmation Letter"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-ol">
+          <h4>G.C.E.Ordinary Level Certificate</h4>
+          <p>KG/St.Joseph's Balika Maha Vidyalaya</p>
+          <img src="certificates/ResultSheet.jpeg" alt="O/L Certificate" style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-al">
+          <h4>G.C.E.Advanced Level Certificate</h4>
+          <p>KG/St.Joseph's Balika Maha Vidyalaya</p>
+          <img src="certificates/ResultSheet2.jpg" alt="A/L Certificate" style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-enrolment">
+          <h4>University Enrolment</h4>
+          <p>B.Sc.in Applied Sciences - Rajarata University of Sri Lanka </p>
+          <img src="certificates/University Enrolment.jpg" alt="University Enrolment"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-western-music">
+          <h4>Western Music SDP</h4>
+          <p>Ministry of Buddhasasana &amp; Rajarata University of Sri Lanka</p>
+          <img src="certificates/Western Music SDP.jpg" alt="Western Music SDP Certificate"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-volunteer">
+          <h4>Volunteer Appreciation</h4>
+          <p>ZeroPlastic Club - Media Team, 2025</p>
+          <img src="certificates/Volunteer Appreciation.jpg" alt="Volunteer Certificate"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-sustain">
+          <h4>Volunteer Appreciation</h4>
+          <p> Sustain Session 3.3 webinar, 2024 </p>
+          <img src="certificates/Volunteer Appreciation_2.jpeg" alt="Volunteer Certificate"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-bhathkande">
+          <h4>Bhathkande Vocal Prathama</h4>
+          <p>Erandathie Lalitha Kalayathanaya,Horana 2018</p>
+          <img src="certificates/Bhathkande Vocal Prathama.jpg" alt="Bhathkande Vocal Prathama"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="sport-cricket">
+          <h4>Cricket - National Sports Festival</h4>
+          <p>1st Place, Kegalle Divisional, 2021</p>
+          <img src="certificates/Cricket - National Sports Festival.jpg" alt="Cricket - National Sports Festival"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="sport-elle">
+          <h4>Elle - Inter Faculty Championship</h4>
+          <p>Rajarata University of Sri Lanka, 2nd Runner-Up, 2024</p>
+          <img src="certificates/RajarataElle.jpg" alt="Elle Championship Award" style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-singing-2014">
+          <h4>Singing Competition</h4>
+          <p>Sabaragamuwa Province, 2nd Place, 2014</p>
+          <img src="certificates/Singing Competition P.jpg" alt="Singing Competition Sabaragamuwa 2014"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-music">
+          <h4>Music Theory - Elementary Honours</h4>
+          <p>Institute of Western Music &amp; Speech, 2008</p>
+          <img src="certificates/Music Theory - Elementary Honours.jpg" alt="Music Theory Elementary Honours"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-music-grade-two">
+          <h4>Music Theory - Grade Two Pass</h4>
+          <p>Institute of Western Music &amp; Speech, 2010</p>
+          <img src="certificates/Music Theory - Grade Two Pass.jpg" alt="Music Theory Grade Two"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-singing-2014-rajya">
+          <h4>Rajya Sahithya Kala Ulela - Singing</h4>
+          <p>Galigamuwa Division, 1st Place, 2014</p>
+          <img src="certificates/Singing - Rajya Sahithya Kala Ulela.jpg" alt="Singing Award 2014"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-poem-2012">
+          <h4>Rajya Sahithya Kala Ulela - Poem Writing</h4>
+          <p>Kegalle District, 3rd Place, 2012</p>
+          <img src="certificates/Poem Writing - Rajya Sahithya Kala Ulela.jpg" alt="Poem Writing Award"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-poem-2012-galigamuwa">
+          <h4>Rajya Sahithya Kala Ulela - Poem Writing</h4>
+          <p>Galigamuwa Division, 1st Place, 2012</p>
+          <img src="certificates/Poem Writing - Rajya Sahithya Kala Ulela 2.jpg" alt="Poem Writing Award"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-essay-2011">
+          <h4>Rajya Sahithya Kala Ulela - Essay Writing</h4>
+          <p>Kegalle District, 2nd Place, 2011</p>
+          <img src="certificates/Essay Writing - Rajya Sahithya Kala Ulela.jpg" alt="Essay Writing Award Kegalle"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-essay-2011-galigamuwa">
+          <h4>Rajya Sahithya Kala Ulela - Essay Writing</h4>
+          <p>Galigamuwa Division, 1st Place, 2011</p>
+          <img src="certificates/Essay Writing - Rajya Sahithya Kala Ulela 2.jpg" alt="Essay Writing Award Kegalle"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-essay-2012">
+          <h4>Rajya Sahithya Kala Ulela - Essay Writing</h4>
+          <p>Galigamuwa Division, 2nd Place, 2012</p>
+          <img src="certificates/Essay Writing - Rajya Sahithya Kala Ulela 3.jpg" alt="Essay Writing Award Kegalle"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-singing">
+          <h4>Sri Sambuddha Jayanthiya - Padya Gayana</h4>
+          <p>Divisional Secretariat - Galigamuwa, 3rd Place, 2006</p>
+          <img src="certificates/Padya Gayana - Sri Sambuddha Jayanthiya.jpg" alt="Padya Gayana Award"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-2006">
+          <h4>Sri Sambuddha Jayanthiya - Bhakthi Geetha</h4>
+          <p>Divisional Secretariat - Galigamuwa, 2nd Place, 2006</p>
+          <img src="certificates/Bhakthi Geetha - Sri Sambuddha Jayanthiya.jpg" alt="Bhakthi Geetha Award"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="art-singing-2015">
+          <h4>Singing Competition</h4>
+          <p>National Reading Month Library Competition, KG/St.Joseph's Balika Maha Vidyalaya, 2nd Place, 2015</p>
+          <img src="certificates/Singing Competition.jpg" alt="Singing Competition St Josephs 2015"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-class">
+          <h4>Class Proficiency Award</h4>
+          <p>KG/St.Joseph's Balika Maha Vidyalaya</p>
+          <img src="certificates/Class Proficiency Award.jpg" alt="Class Proficiency Award"
+            style="width:100%;margin-top:0.5rem;">
+        </div>
+        <div class="cert-card" id="cert-daham-pasal-final">
+          <h4>Daham Pasal Final</h4>
+          <p>Department of Examinations - Sri Lanka, 2018</p>
+          <img src="certificates/Daham Pasal Final.jpg" alt="Daham Pasal Final" style="width:100%;margin-top:0.5rem;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>© 2026 Nethmi Wanigasekara · Rajarata University of Sri Lanka ·
+      <a href="mailto:nethmikaushika8005@gmail.com">nethmikaushika8005@gmail.com</a>
+    </p>
+  </footer>
+</div>
+
+<!-- ══════════════════ PAGE 5: CONTACT ══════════════════ -->
+<div id="page-contact" class="page">
+
+  <div class="container">
+    <div class="section anchor-section" id="contact-top">
+      <span class="section-label">- Get in Touch</span>
+      <h1 class="page-title">Contact <span>Me</span></h1>
+    </div>
+
+    <div class="grid-2" style="align-items:start;gap:3rem;">
+      <!-- Contact Info -->
+      <div>
+        <h2 class="section-title">Contact Details</h2>
+        <table class="skills-table" style="margin-bottom:2rem;">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>📧 Email</td>
+              <td><a href="mailto:nethmikaushika8005@gmail.com"
+                  style="color:var(--accent);text-decoration:none;">nethmikaushika8005@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td>📱 Phone</td>
+              <td><a href="tel:+94787432377" style="color:var(--accent);text-decoration:none;">0787432377</a></td>
+            </tr>
+            <tr>
+              <td>📍 Address</td>
+              <td>H 138/1, Owitehena Waththa, Railway Station Road, Ihalawela, Warakapola.</td>
+            </tr>
+            <tr>
+              <td>🎓 University</td>
+              <td>Rajarata University of Sri Lanka</td>
+            </tr>
+            <tr>
+              <td>⌥ GitHub</td>
+              <td>
+                <!-- ★ Replace YOUR_USERNAME -->
+                <a href="https://github.com/Nethmi8005" target="_blank"
+                  style="color:var(--accent);text-decoration:none;">github.com/Nethmi8005</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Map iframe -->
+        <div class="iframe-container">
+          <div class="iframe-label">
+            <span class="dot dot-r"></span>
+            <span class="dot dot-y"></span>
+            <span class="dot dot-g"></span>
+            &nbsp; Location Map - Warakapola, Kegalle
+          </div>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=80.32,7.24,80.36,7.28&layer=mapnik&marker=7.2600,80.3400"
+            height="260" title="Warakapola, Kegalle, Sri Lanka" loading="lazy" style="width:100%;border:none;">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div>
+        <h2 class="section-title">Send a Message</h2>
+        <form class="contact-form" action="https://formspree.io/f/xaqzwken" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Your last name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a subject…</option>
+              <option value="collaboration">Project Collaboration</option>
+              <option value="internship">Internship Opportunity</option>
+              <option value="research">Research Partnership</option>
+              <option value="general">General Enquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here…" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="how">How did you find me?</label>
+            <select id="how" name="how">
+              <option value="" disabled selected>Select…</option>
+              <option value="github">GitHub</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="university">University</option>
+              <option value="referral">Referral</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div><br>
+  <footer>
+    <p>© 2026 Nethmi Wanigasekara · Rajarata University of Sri Lanka ·
+      <a href="mailto:nethmikaushika8005@gmail.com">nethmikaushika8005@gmail.com</a>
+    </p>
+  </footer>
+</div>
+
+<!-- ══════════════════ JAVASCRIPT ══════════════════ -->
+<script>
+  function showPage(name, updateHash = true) {
+    const pageId = 'page-' + name;
+    const target = document.getElementById(pageId);
+
+    document.querySelectorAll('.page').forEach(p => {
+      p.classList.toggle('active', p === target);
+    });
+
+    if (target && updateHash) {
+      history.replaceState(null, '', '#' + name);
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.classList.toggle('active', a.dataset.page === name);
+    });
+
+    if (target) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  function getPageFromHash() {
+    const page = window.location.hash.replace('#', '').trim().toLowerCase();
+    const validPages = ['home', 'about', 'projects', 'achievements', 'contact'];
+    return validPages.includes(page) ? page : 'home';
+  }
+
+  window.addEventListener('DOMContentLoaded', function () {
+    showPage(getPageFromHash(), false);
+  });
+
+  window.addEventListener('hashchange', function () {
+    showPage(getPageFromHash(), false);
+  });
+
+  function scrollToId(id) {
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
+  }
+  function scrollToId(id) {
+  setTimeout(() => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('cert-highlight');
+      setTimeout(() => el.classList.remove('cert-highlight'), 5000);
+    }
+  }, 50);
+}
+  document.querySelectorAll('[data-page="about"]').forEach(el => {
+    el.addEventListener('click', () => {
+      setTimeout(() => {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+          const w = bar.style.width;
+          bar.style.width = '0';
+          setTimeout(() => { bar.style.width = w; }, 100);
+        });
+      }, 300);
+    });
+  });
+
+  // Runtime fix: if some pages accidentally nested inside others, move them to top-level
+  ['achievements', 'contact'].forEach(name => {
+    const el = document.getElementById('page-' + name);
+    if (el && el.parentElement !== document.body) {
+      document.body.appendChild(el);
+    }
+  });
+</script>
+</body>
+
+</html>
